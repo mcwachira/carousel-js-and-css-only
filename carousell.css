@@ -1,0 +1,259 @@
+
+.sec__hope-carousel h1,
+.sec-partners h1,
+{
+    font-size: 1rem;
+    letter-spacing:  3px;
+}
+
+
+.sec__hope-carousel .follow__us,
+.follow__us {
+    position: relative;
+    padding-bottom: 8px
+}
+
+
+
+.sec__hope-carousel .follow__us a:after,
+.follow__us a:after {
+    content: " // "
+}
+
+
+.sec__hope-carousel .follow__us a,
+.follow__us a {
+    font-size: 13px;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+    color: #3f3e44;
+}
+
+.sec__hope-carousel .follow__us a span,
+.follow__us a span {
+    color: #3f3e44;
+}
+
+.sec__hope-carousel {
+    background-color: #a77d54;
+    position: relative;
+    padding: 40px 0;
+    
+}
+.sec__hope-carousel .hope-logo {
+    background: url(./img/hope.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: -7%;
+    height: 114%;
+    width: 100%;
+    z-index: 1;
+}
+
+.sec__hope-carousel  .hideable .empty__box  { 
+    background-color: #fff;
+    margin-top: 20px;
+    height: 40px;
+}
+
+.tweet   { 
+    background-color: #fff;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: inherit;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.tweet .follow__link a {
+    color: #908f8f
+}
+.tweet .follow a:hover {
+    color: #00a7e1
+}
+.sec__hope-carousel h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0 40px;
+    color: #FFF;
+}
+
+.sec__hope-carousel section {
+    position: relative;
+    zoom: 1;
+    width: 100%;
+    overflow: hidden;
+    z-index: 5;
+}
+
+
+.sec__hope-carousel section:after,
+.sec__hope-carousel section:before {
+    content: "";
+    display: table;
+}
+.sec__hope-carousel section:after {
+    clear: both;
+}
+.overflow {
+    width: 30000px;
+    height: 320px;
+    position: relative;
+}
+
+.background__settings {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sec__hope-carousel section article {
+    position: relative;
+    float: left;
+    width: 250px;
+    height: 320px;
+    margin: 0 10px;
+    overflow: hidden;
+   
+    
+}
+
+.overflow  .change__image--color .overlay {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: transparent;
+    background-color: rgba(221, 177, 10, .95);
+    z-index: 2;
+    transition: all  .5s ease-in-out;
+}
+
+.change__image--color  article  h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 5;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+  
+}
+.change__image--color article h3 span {
+    display: block;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 13px;
+    padding-top: 2px;
+}
+
+.sec__hope-carousel section article img{
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+
+    .overflow  .change__image--color :hover .overlay {
+       opacity: 1;
+        zoom: 1;
+    }
+
+.sec__hope-carousel .hope-footer {
+    zoom: 1;
+    max-width: 63.75rem;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: .625rem;
+    padding-right: .625rem;
+    margin-top: 2rem;
+}
+
+.sec__hope-carousel .hope-nav button {
+    outline: 0;
+    border: 0;
+    background-color: #3f3e44;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    border-radius: 5rem;
+    padding: 0;
+    margin: 0;
+    line-height: 26px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.sec__hope-carousel .follow__us a:hover span {
+    color: #ddb10a;
+}
+
+.sec__hope-carousel .hope-nav {
+    margin-bottom: 1.5em;
+}
+
+@media screen and (max-width:480px) {
+    .sec__hope-carousel .hope-logo {
+        display: none;
+    }
+}
+@media screen and (min-width:480px) {
+    .sec__hope-carousel h1 {
+        color: #3f3e44;
+    }
+}
+
+ @media screen and (min-width:768px) {
+    .sec__hope-carousel h1 {
+        padding: 0 20px;
+        color: #3f3e44;
+        margin-bottom: 40px;
+    }
+    .overflow {
+        height: 300px
+    }
+    
+    .sec__hope-carousel .hope-footer {
+        margin-top: 4rem;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .sec__hope-carousel .follow__us {
+        text-align: center;
+    }
+    .sec__hope-carousel .hope-nav {
+        text-align: center;
+        margin-bottom: 0;
+    }
+    body.home .sec__hope-carousel {
+        padding-top: 80px;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+    .sec__hope-carousel .hope-footer {
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 960px) {
+     .sec__hope-carousel .hope-footer {
+        padding-left: .625rem;
+        padding-right: .625rem;
+    }
+    .sec__hope-carousel .follow__us {
+        float: left;
+    } 
+    .sec__hope-carousel .hope-nav {
+        float: right;
+        margin-right: 30px;
+    }
+   
+} 
+
+
